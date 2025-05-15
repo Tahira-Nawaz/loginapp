@@ -63,7 +63,7 @@
 	 	  <li><a href="#contact">Contact</a></li>
 	 	  <li><a href="#about">About</a></li>
 	 	</ul>
-	 	<form action="signupinc.php" method="post">
+	 	<form action="includes/signup.inc.php" method="post">
 	 		<br><center><label><h2>SignUp page</h2></h2></label></center>
 	 		<label for="name">User name</label>
 	 		<input type="text" class="form-control" id="exampleInputEmail1" name="uid" placeholder="Username"><br>
