@@ -1,6 +1,6 @@
 <?php
 
-$servername="tahira-server";
+$servername="tahira-server.mysql.database.azure.com";
 $dbusername="tahira";
 $password="@bajwa123456789";
 $dBName="tahira-database";
