@@ -1,6 +1,19 @@
 <?php
+// Database connection details
+$servername = "tahira-server.mysql.database.azure.com";
+$dbusername = "tahira";
+$password = "@bajwa123456789";
+$dBName = "tahira-database";
+
+// Create connection
+$conn = mysqli_connect($servername, $dbusername, $password, $dBName);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
 if (isset($_POST['signup-submit'])) {
-    require 'dbh.inc.php'; // DB connection
 
     $username = $_POST['uid'];
     $email = $_POST['mail'];
@@ -32,6 +45,7 @@ if (isset($_POST['signup-submit'])) {
 
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
+
 } else {
     echo "Invalid access.";
 }
