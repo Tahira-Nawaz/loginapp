@@ -16,6 +16,9 @@ mysqli_ssl_set($con, NULL, NULL, $ssl_ca, NULL, NULL);
 if (!mysqli_real_connect($con, $server, $username, $password, $database, $port, NULL, MYSQLI_CLIENT_SSL)) {
     die("❌ Secure connection failed: " . mysqli_connect_error());
     echo " Secure MySQL Connection not Successful!<br>";
-} else {
-    echo "✅ Secure MySQL Connection Successful!<br>";
-}
+} 
+
+
+// else {
+//     echo "✅ Secure MySQL Connection Successful!<br>";
+// }
